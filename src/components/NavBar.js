@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   const [screen, setScreen] = useState(window.innerWidth < 900);
   useEffect(() => {
     if (theme == "dark") {
@@ -26,6 +26,7 @@ const NavBar = () => {
       document.documentElement.classList.remove("dark");
     }
   };
+  
   
   useEffect(() => {
     const updateScreenSize = () => {

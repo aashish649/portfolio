@@ -9,6 +9,8 @@ import { Data } from "../Data/Constants";
 import { Link } from "react-router-dom";
 import { RiContactsFill } from "react-icons/ri";
 import { MdDownload } from "react-icons/md";
+import { useState } from "react";
+
 const About = () => {
   const [typeEffect] = useTypewriter({
     words: ["Full Stack Developer", "Competitive Programmer"],
@@ -17,13 +19,24 @@ const About = () => {
     deleteSpeed: 40,
     delay: 50,
   });
+  const [action, setAction] = useState('');
+
+  const handleButtonClick = (action) => {
+    if (action === 'contact') {
+      window.location.href = `mailto:${Data.email}`;
+    } else if (action === 'resume') {
+      window.location.href = Data.resume;
+    }
+  };
+
+  
   return (
     <div>
       <section
         id="about"
         className="p-5 mx-20 mb-10 font-medium font-poppins max-sm:p-2 max-sm:mx-5 flex flex-col md:flex-row items-center"
       >
-        {/* Left side: Name and Description */}
+       
         <div className="flex-1 md:w-1/2">
           <div className="INTRO">
             <h3 className="text-[#00040f] dark:text-white text-4xl max-sm:text-2xl">
@@ -84,26 +97,26 @@ const About = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              {/* Contact Me Button */}
-              <button className="flex items-center bg-gradient-to-r from-pink-500 to-pink-600 text-white py-2 px-4 rounded-md transition-all hover:scale-105 duration-300">
-                <a href={`mailto:${Data.email}`} className="flex items-center">
-                  <RiContactsFill size={24} className="mr-2" />
-                  Contact Me
-                </a>
+          
+              <button
+                className="flex items-center bg-gradient-to-r from-pink-500 to-pink-600 text-white py-2 px-4 rounded-md transition-all hover:scale-105 duration-300"
+                onClick={() => handleButtonClick('contact')}
+              >
+                <RiContactsFill size={24} className="mr-2" />
+                Contact Me
               </button>
-
-              {/* Get Resume Button */}
-              <button className="flex items-center bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 px-4 rounded-md transition-all hover:scale-105 duration-300">
-                <a href={Data.resume} download className="flex items-center">
-                  <MdDownload size={24} className="mr-2" />
-                  Get Resume
-                </a>
+              <button
+                className="flex items-center bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 px-4 rounded-md transition-all hover:scale-105 duration-300"
+                onClick={() => handleButtonClick('resume')}
+              >
+                <MdDownload size={24} className="mr-2" />
+                Get Resume
               </button>
             </div>
           </div>
         </div>
 
-        {/* Right side: Lottie Animation */}
+      
         <div className="flex-1 md:w-1/2 flex justify-center mt-5 md:mt-0 relative button-animation">
           <Lottie
             animationData={computer}

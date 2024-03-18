@@ -13,6 +13,6 @@ export const skillsData = [
     'GitHub',
     'PostMan',
     'Vercel',
-    'Figma'
-  ]
+    'Figma',
+]
   
