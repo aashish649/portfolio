@@ -27,7 +27,7 @@ const About = () => {
 
     <div className="flex justify-center text-center mt-10 my-5 lg:py-8">
         <div className="flex items-center">
-            <span className="text-[#00040f] dark:text-slate-300 text-center font-extrabold mb-10 max-sm:text-2xl p-2 px-8 text-5xl ml-[-120px]">
+            <span className="text-[#00040f] dark:text-slate-300 text-center font-extrabold mb-10 max-sm:text-2xl p-2 px-8 text-5xl ml-[-70px]">
                 About
             </span>
         </div>
