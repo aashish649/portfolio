@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Portfolio
+![alumni-track](https://socialify.git.ci/aashish649/portfolio/image?language=1&owner=1&name=1&stargazers=1&theme=Light)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to My Portfolio!
 
-## Available Scripts
+## This is my personal portfolio website where I showcase my skills and projects. It's built using React and styled with Tailwind CSS to provide a modern and easy-to-use experience.
 
-In the project directory, you can run:
+## Deployment
+This website is hosted on Vercel. You can access the deployed application using the following link:
 
-### `npm start`
+[Alumni Tracker](https://aashishanand.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
+![demo1](https://github.com/aashish649/portfolio/assets/150827208/66a267c3-bf4c-48a4-ac3f-28874a2247a8.png)
+![demo2](https://github.com/aashish649/portfolio/assets/150827208/526b0297-fdb0-490f-96ee-683a1ab29fd3.png)
+![demo3](https://github.com/aashish649/portfolio/assets/150827208/79bf77fd-1e67-4240-aacb-0953f7c7af88.png)
 
-### `npm test`
+## Sections
+- About Me
+- Projects
+- Skills
+- Education
+- Contact
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+| Logo | Technology |
+| --- | --- |
+| <img src="https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg" alt="React Logo" width="30"/> | React |
+| <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="CSS Logo" width="30"/> | Tailwind CSS |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Getting Started :dart:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Fork and Clone the repo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 
-### `npm run eject`
+```
+git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd portfolio
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install packages from the root directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Then, run the development server:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+# Packages Used :package:
 
-### Code Splitting
+| Used Package List  |
+| :----------------: |
+|       react.js      |
+|  @emailjs/browser  |
+|    lottie-react    |
+| react-fast-marquee |
+|    react-icons     |
+|   react-toastify   |
+|    tailwindcss     |
+|   AOS - Animate on scroll library |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
