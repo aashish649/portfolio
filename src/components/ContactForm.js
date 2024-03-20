@@ -60,10 +60,10 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSendMail} data-aos="fade-up">
       <div
-        className="max-w-screen-lg mx-auto relative  my-8 lg:my-24  overflow-x-hidden overflow-hidden"
+        className="max-w-screen-lg mx-auto relative  my-8 lg:my-10  overflow-x-hidden overflow-hidden"
         data-aos="fade-up"
       >
-        <p className="font-medium mb-3 text-left ml-4 sm:ml-12 text-pink-500 dark:text-[#16f2b3] text-xl uppercase">
+        <p className="font-medium mb-1 text-left  sm:ml-12 text-pink-500 dark:text-[#16f2b3] text-xl uppercase">
           Contact with me
         </p>
         <div

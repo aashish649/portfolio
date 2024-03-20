@@ -50,7 +50,7 @@ export const projects = [
       "Css",
     ],
     github: "https://github.com/aashish649/portfolio",
-    webapp: "",
+    webapp: "https://aashishanand.vercel.app/",
   },
   {
     id: "3",

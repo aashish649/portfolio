@@ -31,67 +31,20 @@ const Contact = () => {
       <div className="flex justify-center mt-10 my-5 lg:py-8">
         <div className="flex items-center">
           <span
-            className="text-[#00040f] dark:text-slate-300 text-center font-extrabold mb-10 max-sm:text-2xl p-2 px-8 text-3xl ml-[-100px]"
+            className="text-[#00040f] dark:text-slate-300 text-center font-extrabold   max-sm:text-2xl p-2 px-8 text-5xl ml-[-120px]"
             data-aos="fade-up"
           >
-            Contact Me
+            Contact
           </span>
         </div>
       </div>
-
       <div
-        className="grid  grid-cols-1 sm:grid-cols-2 max-sm:grid-cols-1 gap-6  items-center"
+        className="grid grid-cols-1 sm:grid-cols-2 max-sm:grid-cols-1 gap-4  items-center"
         data-aos="fade-up"
       >
         <div className="lg:w-full lg:pr-8 lg:pl-8">
           <ContactForm />
         </div>
-
-        {/* <div
-          className="md:w-auto md:flex-1 md:mb-5  border-gray-300 rounded-md p-4 md:mx-0 md:ml-2 md:mr-2 m-3 sm:m-12 sm:text-left"
-          data-aos="fade-up"
-        >
-          <div className="flex flex-col gap-5 lg:gap-9 lg:w-full ">
-            <p className="text-sm md:text-xl flex items-center md:items-start">
-              <MdAlternateEmail
-                className="bg-[#8b98a5] p-2 rounded-full hover:bg-pink-500 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer mr-8"
-                size={36}
-              />
-              <span className="ml-12 md:ml-12 text-[#00040f] dark:text-slate-300">
-                {Data.email}
-              </span>
-            </p>
-            <p className="text-sm md:text-xl flex items-center md:items-start gap-3">
-              <IoMdCall
-                className="bg-[#8b98a5] p-2 rounded-full hover:bg-pink-500 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                size={36}
-              />
-              <span className="ml-12 md:ml-12 text-[#00040f] dark:text-slate-300">
-                {Data.phone}
-              </span>
-            </p>
-            <div className="mt-4 lg:mt-2 flex gap-2 lg:gap-4 justify-start text-left">
-              <a target="_blank" href={Data.github}>
-                <IoLogoGithub
-                  className="bg-[#8b98a5] p-3 rounded-full hover:bg-pink-500 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                  size={48}
-                />
-              </a>
-              <a target="_blank" href={Data.linkedIn}>
-                <BiLogoLinkedin
-                  className="bg-[#8b98a5] p-3 rounded-full hover:bg-pink-500 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                  size={48}
-                />
-              </a>
-              <a target="_blank" href={Data.twitter}>
-                <FaXTwitter
-                  className="bg-[#8b98a5] p-3 rounded-full hover:bg-pink-500 hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
-                  size={48}
-                />
-              </a>
-            </div>
-          </div>
-        </div> */}
         <div
           className="md:w-auto md:flex-1 md:mb-5 border-gray-300 rounded-md p-4 md:mx-0 md:ml-2 md:mr-2 m-3 sm:m-12 sm:text-left"
           data-aos="fade-up"

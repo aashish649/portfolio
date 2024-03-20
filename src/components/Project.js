@@ -71,7 +71,7 @@ const Project = () => {
       <div className="mt-8" data-aos="fade-down">
         <div className="flex justify-center mt-10 my-5 lg:py-8">
           <div className="flex items-center">
-            <span className="text-[#00040f] dark:text-slate-300 text-center font-extrabold mb-3 max-sm:text-2xl p-2 px-8 text-3xl ml-[-70px]">
+            <span className="text-[#00040f] dark:text-slate-300 text-center font-extrabold mb-3 max-sm:text-2xl p-2 px-8 text-5xl ml-[-120px]">
               Projects
             </span>
           </div>
