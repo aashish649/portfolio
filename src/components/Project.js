@@ -7,10 +7,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaGithub } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
+
 const Project = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -44,16 +46,19 @@ const Project = () => {
     window.open(url, "_blank");
   };
 
-  const [showFullDescription, setShowFullDescription] = useState(false);
+  const [expanded, setExpanded] = useState({});
 
-  const toggleDescription = () => {
-    setShowFullDescription(!showFullDescription);
+  const toggleDescription = (projectId) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [projectId]: !prev[projectId],
+    }));
   };
 
   return (
     <section
       id="projects"
-      className="EXPERIENCE p-5 mx-20 mt-5 font-['Poppins'] max-sm:p-2 max-sm:mx-5 max-sm:max-h-[48px] relative"
+      className="max-w-screen-lg mx-auto relative z-50 border-t my-12 lg:my-24 border-[#25213b] overflow-x-hidden overflow-hidden" data-aos="fade-down"
     >
       <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
@@ -63,8 +68,7 @@ const Project = () => {
         </div>
       </div>
 
-      
-      <div className="WRAPPER mt-8" data-aos="fade-down">
+      <div className="mt-8" data-aos="fade-down">
         <div className="flex justify-center mt-10 my-5 lg:py-8">
           <div className="flex items-center">
             <span className="text-[#00040f] dark:text-slate-300 text-center font-extrabold mb-3 max-sm:text-2xl p-2 px-8 text-3xl ml-[-70px]">
@@ -73,13 +77,13 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="PROJECTS grid gap-6  grid-cols-1 sm:grid-cols-3 max-sm:grid-cols-1 mt-16">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-3 max-sm:grid-cols-1 mt-16" style={{ padding: '0 20px' }} data-aos="fade-down">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="flex flex-col rounded overflow-hidden shadow-lg bg-[#e1e1e1] dark:bg-transparent button-animation hover:bg-gradient-to-tl from-[#ccc] to-[#e1e1e1] dark:from-[#00040F] dark:to-[#0B274C]"
+              className="flex flex-col rounded overflow-hidden shadow-lg bg-[#e1e1e1] dark:bg-transparent button-animation hover:bg-gradient-to-tl from-[#ccc] to-[#e1e1e1] dark:from-[#00040F] dark:to-[#0B274C] sm:col-span-1"
+              style={{ marginBottom: '20px' }} 
             >
-              {/* Image Slider */}
               <div className="relative w-full h-[120px] sm:h-[150px] overflow-hidden px-3 py-3">
                 <Slider {...settings}>
                   {project.images.map((image, index) => (
@@ -94,7 +98,6 @@ const Project = () => {
               </div>
 
               <div className="flex-grow flex flex-col justify-between px-4 py-4">
-                {" "}
                 <div className="flex flex-wrap mb-2">
                   {project.tags.map((tag, index) => (
                     <button
@@ -111,23 +114,20 @@ const Project = () => {
                 <p className="text-gray-700 text-sm mb-2 text-left">
                   {project.date}
                 </p>
-                
                 <p className="text-gray-500 text-sm text-left mb-2">
-                  {showFullDescription
+                  {expanded[project.id]
                     ? project.description
                     : project.description.split(" ").slice(0, 30).join(" ")}
                   {project.description.split(" ").length > 30 && (
                     <button
                       className="text-blue-600 hover:underline"
-                      onClick={toggleDescription}
+                      onClick={() => toggleDescription(project.id)}
                     >
-                      {showFullDescription ? "Read Less" : "Read More"}
+                      {expanded[project.id] ? "Read Less" : "Read More"}
                     </button>
                   )}
                 </p>
-  
                 <div className="flex justify-between">
-                  {" "}
                   <button
                     className="flex items-center bg-gradient-to-r from-pink-500 to-pink-600 text-white py-2 px-4 transition-all hover:scale-105 rounded-full duration-300 h-14 w-14 "
                     onClick={() => openGithubLink(project.github)}

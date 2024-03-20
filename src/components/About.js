@@ -1,133 +1,59 @@
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Lottie from "lottie-react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaTwitterSquare } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
-import computer from "../lottie/Computer.json";
-import { SiGeeksforgeeks } from "react-icons/si";
 import { Data } from "../Data/Constants";
-import { Link } from "react-router-dom";
-import { RiContactsFill } from "react-icons/ri";
-import { MdDownload } from "react-icons/md";
-import { useState } from "react";
+import Lottie from "lottie-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import computer from "../lottie/Computer.json";
+import about from "../lottie/about.json";
+import first from "../lottie/first.json";
+import second from "../lottie/Second.json";
+import { useEffect } from "react";
 
 const About = () => {
-  const [typeEffect] = useTypewriter({
-    words: ["Full Stack Developer", "Competitive Programmer"],
-    loop: {},
-    typeSpeed: 100,
-    deleteSpeed: 40,
-    delay: 50,
-  });
-  const [action, setAction] = useState('');
-
-  const handleButtonClick = (action) => {
-    if (action === 'contact') {
-      window.location.href = `mailto:${Data.email}`;
-    } else if (action === 'resume') {
-      window.location.href = Data.resume;
-    }
-  };
-
-  
+    useEffect(() => {
+        AOS.init();
+      }, []);
   return (
-    <div>
-      <section
-        id="about"
-        className="p-5 mx-20 mb-10 font-medium font-poppins max-sm:p-2 max-sm:mx-5 flex flex-col md:flex-row items-center"
-      >
-       
-        <div className="flex-1 md:w-1/2">
-          <div className="INTRO">
-            <h3 className="text-[#00040f] dark:text-white text-4xl max-sm:text-2xl">
-              Hi, I am
-            </h3>
-            <h2 className="text-5xl md:text-6xl max-sm:text-3xl mt-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-600 dark:from-cyan-600 dark:to-slate-300">
-              {Data.name}
-            </h2>
-            <p className="text-3xl md:text-3xl max-sm:text-xl mt-3 bg-clip-text text-transparent bg-gradient-to-r from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 max-w-[80%] md:max-w-[470px] text-left">
-              I am a{" "}
-              <span className="inline-block text-3xl md:text-3xl max-sm:text-xl bg-clip-text text-pink-500 font-bold -z-50">
-                {typeEffect}
-              </span>
-              <Cursor />
-            </p>
-            <p className="ABOUT text-lg mt-2 max-sm:text-sm bg-clip-text text-transparent bg-gradient-to-r from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 max-w-[80%] md:max-w-[470px] text-left">
-              Programming enthusiast who often thinks about developing new
-              things for solving real-world problems.
-            </p>
-            <div className="my-8 flex items-center gap-5">
-              <a
-                href={Data.github}
-                target="_blank"
-                className="transition-all text-pink-500 hover:scale-125 duration-300"
-              >
-                <BsGithub size={30} />
-              </a>
-              <a
-                href={Data.linkedIn}
-                target="_blank"
-                className="transition-all text-pink-500 hover:scale-125 duration-300"
-              >
-                <BsLinkedin size={30} />
-              </a>
-              <a
-                href={Data.leetcode}
-                target="_blank"
-                className="transition-all text-pink-500 hover:scale-125 duration-300"
-              >
-                <SiLeetcode size={30} />
-              </a>
+    <section
+    id="about"
+    className="max-w-screen-lg mx-auto relative z-50 border-t my-12 lg:my-24 border-[#25213b] overflow-x-hidden overflow-hidden" data-aos="fade-down"
+>
+    <div className="w-[100px] h-[100px] mb-16 bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
-              <a
-                href={Data.gfg}
-                target="_blank"
-                className="transition-all text-pink-500 hover:scale-125 duration-300"
-              >
-                <SiGeeksforgeeks size={30} />
-              </a>
+    <div className="flex justify-center -translate-y-[1px]">
+        <div className="w-3/4">
+            <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+        </div>
+    </div>
 
-              <a
-                href={Data.twitter}
-                target="_blank"
-                className="transition-all text-pink-500 hover:scale-125 duration-300"
-              >
-                <FaTwitterSquare size={30} />
-              </a>
-            </div>
+    <div className="flex justify-center text-center mt-10 my-5 lg:py-8">
+        <div className="flex items-center">
+            <span className="text-[#00040f] dark:text-slate-300 text-center font-extrabold mb-10 max-sm:text-2xl p-2 px-8 text-3xl ml-[-70px]">
+                About
+            </span>
+        </div>
+    </div>
 
-            <div className="flex items-center gap-4">
-          
-              <button
-                className="flex items-center bg-gradient-to-r from-pink-500 to-pink-600 text-white py-2 px-4 rounded-md transition-all hover:scale-105 duration-300"
-                onClick={() => handleButtonClick('contact')}
-              >
-                <RiContactsFill size={24} className="mr-2" />
-                Contact Me
-              </button>
-              <button
-                className="flex items-center bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 px-4 rounded-md transition-all hover:scale-105 duration-300"
-                onClick={() => handleButtonClick('resume')}
-              >
-                <MdDownload size={24} className="mr-2" />
-                Get Resume
-              </button>
-            </div>
-          </div>
+    <div className="flex flex-col md:flex-row justify-center mt-16 md:mt-0 space-y-5 md:space-y-0 md:space-x-10" data-aos="fade-up">
+        <div className="w-full md:w-auto md:flex-1 md:relative md:mr-10" style={{ perspective: '1000px' }}>
+            <Lottie
+                animationData={first}
+                loop={true}
+                className="max-w-[650px] md:max-w-[800px] h-auto   lottie-3d-effect"
+            />
         </div>
 
-      
-        <div className="flex-1 md:w-1/2 flex justify-center mt-5 md:mt-0 relative button-animation">
-          <Lottie
-            animationData={computer}
-            loop={true}
-            className="max-w-[650px] md:max-w-[800px] rounded-xl border border-[#00040f]"
-          />
+        <div className=" md:w-auto md:flex-1 md:mb-5 button-animation border-gray-300 rounded-md p-4 md:mx-0 md:ml-2 md:mr-2 m-3 sm:m-12" data-aos="fade-up">
+            <div className="mb-3 font-semibold text-pink-500 dark:text-[#16f2b3] text-lg md:text-xl text-center uppercase">
+                Who I am?
+            </div>
+            <div className="text-[#00040f] dark:text-slate-300 text-xs md:text-sm lg:text-base">
+                {Data.description}
+            </div>
         </div>
-      </section>
-      </div>
-    
+    </div>
+</section>
   );
 };
 
 export default About;
+

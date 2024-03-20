@@ -49,7 +49,7 @@ export const projects = [
       "Tailwind Css",
       "Css",
     ],
-    github: "",
+    github: "https://github.com/aashish649/portfolio",
     webapp: "",
   },
   {

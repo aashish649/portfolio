@@ -62,7 +62,7 @@ const NavBar = () => {
         </div>
         <div className="NAVLINKS text-[20px] translate-x-[80px] max-sm:hidden flex gap-6 text-gray-800 dark:text-[#e1e1e1]">
           <a
-            href="#about"
+            href="#home"
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >

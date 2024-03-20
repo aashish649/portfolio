@@ -1,11 +1,13 @@
 import HashLoader from "react-spinners/HashLoader";
 import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
-import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Project";
 import Project from "./components/Project";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
 const override = {
   display: "flex",
   justifyContent: "center",
@@ -38,14 +40,15 @@ const App = () => {
         </div>
       ) : (
         <div>
-          <Router>
             <div>
               <NavBar />
-              <About />
+              <Home />
+              <About/>
               <Skills />
               <Project />
+              <Education/>
+              <Contact/>
             </div>
-          </Router>
         </div>
       )}
     </>
