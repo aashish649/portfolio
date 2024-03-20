@@ -8,7 +8,7 @@ export const Educations = [
       logo:nit,
       title: "Master's in Mathematics",
       duration: "2018 - 2023",
-      institution: "National University of Bangladesh",
+      institution: "National Institute Of Technology,Patna",
     },
     {
       id: 2,
@@ -25,3 +25,6 @@ export const Educations = [
       institution: "S.R Vidyapeeth",
     }
 ]
+
+
+
