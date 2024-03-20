@@ -66,7 +66,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 button-animation">
+            <button className="px-4 py-2 ">
               Home <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
@@ -78,7 +78,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 button-animation">
+            <button className="px-4 py-2 ">
               About
               <span class="top"></span>
               <span class="right"></span>
@@ -91,7 +91,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 button-animation">
+            <button className="px-4 py-2">
               Skills <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
@@ -103,7 +103,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 button-animation">
+            <button className="px-4 py-2 ">
               Projects
               <span class="top"></span>
               <span class="right"></span>
@@ -116,7 +116,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 button-animation">
+            <button className="px-4 py-2 ">
               Education
               <span class="top"></span>
               <span class="right"></span>
@@ -129,7 +129,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2   button-animation">
+            <button className="px-4 py-2   ">
               Contact <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
