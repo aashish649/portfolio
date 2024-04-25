@@ -3,12 +3,17 @@ import Lottie from "lottie-react";
 import bookc from "../lottie/bookc.json";
 import GlowCard from "../Data/GlowCard";
 import { Educations } from "../Data/Education";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Education = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section
       id="education"
-      className="max-w-screen-lg mx-auto relative border-t my-12 lg:my-24 border-[#25213b] overflow-x-hidden overflow-hidden"
+      className="max-w-screen-lg mx-auto relative border-t my-12 lg:my-24 border-[#25213b] overflow-x-hidden overflow-hidden" data-aos="fade-up"
     >
       <div className="w-[100px] h-[100px] mb-16 bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
