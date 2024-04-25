@@ -8,7 +8,7 @@
 ## Deployment
 This website is hosted on Vercel. You can access the deployed application using the following link:
 
-[Alumni Tracker](https://aashishanand.vercel.app/)
+[Aashish Anand](https://aashishanand.vercel.app/)
 
 
 ## Demo
