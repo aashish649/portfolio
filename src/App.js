@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import Experinces from "./components/Experinces";
 const override = {
   display: "flex",
   justifyContent: "center",
@@ -44,6 +45,7 @@ const App = () => {
               <NavBar />
               <Home />
               <About/>
+              <Experinces/>
               <Skills />
               <Project />
               <Education/>

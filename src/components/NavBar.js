@@ -46,7 +46,7 @@ const NavBar = () => {
         <div className="LOGO flex items-center">
           <a
             href="#"
-            className="text-3xl bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent dark:text-cyan-500 max-sm:text-2xl"
+            className="text-2xl bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent dark:text-cyan-500 max-sm:text-2xl"
           >
             {"Aashish{</>}"}
           </a>
@@ -66,7 +66,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 ">
+            <button className="px-2 py-2 ">
               Home <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
@@ -78,8 +78,21 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 ">
+            <button className="px-2 py-2 ">
               About
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
+            </button>
+          </a>
+          <a
+            href="#experience"
+            class="nav-link"
+            className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
+          >
+            <button className="px-2 py-2 ">
+              Experiences
               <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
@@ -91,7 +104,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2">
+            <button className="px-2 py-2">
               Skills <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
@@ -103,7 +116,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 ">
+            <button className="px-2 py-2 ">
               Projects
               <span class="top"></span>
               <span class="right"></span>
@@ -116,8 +129,8 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2 ">
-              Education
+            <button className="px-2 py-2 ">
+              Educations
               <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
@@ -129,7 +142,7 @@ const NavBar = () => {
             class="nav-link"
             className="nav-link hover:text-blue-600 dark:hover:text-cyan-500 text-lg"
           >
-            <button className="px-4 py-2   ">
+            <button className="px-2 py-2   ">
               Contact <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
