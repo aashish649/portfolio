@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Lottie from "lottie-react";
 import ContactForm from "./ContactForm";
 import mail from "../lottie/mail.json";
+
 const Contact = () => {
   useEffect(() => {
     AOS.init();
@@ -100,3 +101,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+

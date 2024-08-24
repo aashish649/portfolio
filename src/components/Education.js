@@ -6,6 +6,7 @@ import { Educations } from "../Data/Education";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+
 const Education = () => {
   useEffect(() => {
     AOS.init();

@@ -10,33 +10,43 @@ import { Link } from "react-router-dom";
 import { RiContactsFill } from "react-icons/ri";
 import { MdDownload } from "react-icons/md";
 import { useState } from "react";
-import first from "../lottie/first.json";
-import Second from "../lottie/Second.json";
-import about from "../lottie/about.json";
+
+
 const Home = () => {
   const [typeEffect] = useTypewriter({
-    words: ["Full Stack Developer", "Competitive Programmer"],
+    words: [
+      "Full Stack Developer",
+      "Competitive Programmer",
+      "Freelance Web Developer",
+    ],
     loop: {},
     typeSpeed: 100,
-    deleteSpeed: 40,
+    deleteSpeed: 60,
     delay: 50,
   });
-  const [action, setAction] = useState('');
+
+  const [action, setAction] = useState("");
 
   const handleButtonClick = (action) => {
-    if (action === 'contact') {
-      window.location.href = `mailto:${Data.email}`;
-    } else if (action === 'resume') {
-      window.location.href = Data.resume;
+    const urlMapping = {
+      contact: `mailto:${Data.email}`,
+      resume: Data.resume,
+    };
+
+    const url = urlMapping[action];
+    if (url) {
+      window.location.href = url;
+    } else {
+      console.error("Invalid action:", action);
     }
   };
+
   return (
     <div>
       <section
         id="home"
         className="p-5 mx-20 mb-10 font-medium font-poppins max-sm:p-2 max-sm:mx-5 flex flex-col md:flex-row items-center"
       >
-       
         <div className="flex-1 md:w-1/2">
           <div className="INTRO">
             <h3 className="text-[#00040f] dark:text-white text-4xl max-sm:text-2xl">
@@ -97,17 +107,16 @@ const Home = () => {
             </div>
 
             <div className="flex items-center gap-4">
-          
               <button
                 className="flex items-center bg-gradient-to-r from-pink-500 to-pink-600 text-white py-2 px-4 rounded-md transition-all hover:scale-105 duration-300"
-                onClick={() => handleButtonClick('contact')}
+                onClick={() => handleButtonClick("contact")}
               >
                 <RiContactsFill size={24} className="mr-2" />
                 Contact Me
               </button>
               <button
                 className="flex items-center bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 px-4 rounded-md transition-all hover:scale-105 duration-300"
-                onClick={() => handleButtonClick('resume')}
+                onClick={() => handleButtonClick("resume")}
               >
                 <MdDownload size={24} className="mr-2" />
                 Get Resume
@@ -116,7 +125,6 @@ const Home = () => {
           </div>
         </div>
 
-      
         <div className="flex-1 md:w-1/2 flex justify-center mt-5 md:mt-0 relative button-animation">
           <Lottie
             animationData={computer}
@@ -125,8 +133,7 @@ const Home = () => {
           />
         </div>
       </section>
-      </div>
-    
+    </div>
   );
 };
 

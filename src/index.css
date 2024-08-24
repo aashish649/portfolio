@@ -41,7 +41,7 @@ span {
   top: 0;
   left: 0;
   width: 0;
-  height: 5px;
+  height: 2px;
   background: linear-gradient(
     90deg,
     transparent 50%,
@@ -53,7 +53,7 @@ span {
 .bottom {
   right: 0;
   bottom: 0;
-  height: 5px;
+  height: 2px;
   background: linear-gradient(
     90deg,
     rgb(57, 255, 20),
@@ -65,7 +65,7 @@ span {
 .right {
   top: 0;
   right: 0;
-  width: 5px;
+  width: 2px;
   height: 0;
   background: linear-gradient(
     180deg,
@@ -78,7 +78,7 @@ span {
 .left {
   left: 0;
   bottom: 0;
-  width: 5px;
+  width: 2px;
   height: 0;
   background: linear-gradient(
     180deg,

@@ -3,7 +3,7 @@ export const Experience = [
         id: 1,
         title: "Software Engineer Intern",
         company: "InterviewVector Technologies",
-        duration: "(Aug 2023 - Jan 2024)",
+        duration: "(Jan 2024 - Jun 2024)",
         description: [
             "Established advanced front-end technologies such as Tailwind CSS, JavaScript, and ReactJS, resulting in improved website loading speed and enhanced user engagement.",
             "Integrated Node.js routing models for MongoDB and integrated Axios and Nodemailer for custom mailing.",
